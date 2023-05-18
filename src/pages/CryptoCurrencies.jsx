@@ -2,9 +2,9 @@ import React from "react";
 import { Layout } from "antd";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import Homepage from "../components/Homepage/Homepage";
+import CryptoCurrencies from "../components/Cryptocurrencies/CryptoCurrencies";
 
-const Home = () => {
+const CryptoCurrenciesPage = () => {
   return (
     <>
       <div className="app">
@@ -12,7 +12,7 @@ const Home = () => {
           <Navbar />
         </div>
         <div className="main">
-          <Homepage />
+          <CryptoCurrencies />
           <div className="footer">
             <Footer />
           </div>
@@ -22,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default CryptoCurrenciesPage;

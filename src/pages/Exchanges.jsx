@@ -2,9 +2,9 @@ import React from "react";
 import { Layout } from "antd";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import Homepage from "../components/Homepage/Homepage";
+import Exchanges from "../components/Exchanges/Exchanges";
 
-const Home = () => {
+const ExchangesPage = () => {
   return (
     <>
       <div className="app">
@@ -12,7 +12,7 @@ const Home = () => {
           <Navbar />
         </div>
         <div className="main">
-          <Homepage />
+          <Exchanges />
           <div className="footer">
             <Footer />
           </div>
@@ -22,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ExchangesPage;

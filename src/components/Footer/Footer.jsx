@@ -3,13 +3,16 @@ import { Typography, Space } from "antd";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const date = new Date();
+
+  const getYear = date.getFullYear();
+
   return (
     <div className="footer">
       <Typography.Title
         level={5}
         style={{ color: "white", textAlign: "center" }}>
-        Copyright © 2023
-        <Link to="/">Cryptoverse Inc.</Link> <br />
+        Copyright © {getYear} <Link to="/">Cryptoverse Inc.</Link> <br />
         All Rights Reserved.
       </Typography.Title>
       <Space>
